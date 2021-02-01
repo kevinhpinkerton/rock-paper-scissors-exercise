@@ -15,12 +15,12 @@ user_input = ""
 while(user_input not in ["rock", "paper", "scissors"]):
     print("Type \"Rock\", \"Paper\", or \"Scissors\": ", end='')
     user_input = input().lower()
-print("You chose \"" + user_input.capitalize() + "\"")
+print("You chose \"" + user_input.capitalize() + "\".")
 
 print("-------------------")
 
 cpu_input = random.choice(["rock", "paper", "scissors"])
-print("Your opponent chose \"" + cpu_input.capitalize() + "\"")
+print("Your opponent chose \"" + cpu_input.capitalize() + "\".")
 
 print("-------------------")
 

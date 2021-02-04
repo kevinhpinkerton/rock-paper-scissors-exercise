@@ -26,15 +26,10 @@ print("Your opponent chose \"" + cpu_input.capitalize() + "\".")
 
 print("-------------------")
 
-inputs = (user_input, cpu_input) #groups both selections.
-#possible outcomes:
-wins = [("rock", "scissors"), ("scissors", "paper"), ("paper", "rock")]
-ties = [("rock", "rock"), ("scissors", "scissors"), ("paper", "paper")]
-
-#matches selections with possible outcomes.
-if inputs in wins:
+#matches inputs/selections with possible outcomes.
+if (user_input, cpu_input) in [("rock", "scissors"), ("scissors", "paper"), ("paper", "rock")]:
     print("You win!")
-elif inputs in ties:
+elif user_input == cpu_input:
     print("You tied.")
 else:
     print("You lose.")

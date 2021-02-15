@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 print("-------------------")
 
 load_dotenv()
-user = os.getenv("USER_NAME", default="Player One") #gets username from .env file.
-print("Welcome " + user + "!")
+PLAYER_NAME = os.getenv("USER_NAME", default="Player One") #gets username from .env file.
+print("Welcome " + PLAYER_NAME + "!")
 
 print("-------------------")
 
